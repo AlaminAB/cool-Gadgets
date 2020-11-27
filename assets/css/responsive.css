@@ -32,6 +32,9 @@
     .social-share-button ul li {
         padding: 5px 4px;
     }
+    .cta a {
+        font-size: 20px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
