@@ -14,10 +14,8 @@
 
   <!-- All CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/all.min.css">
   <!-- Main Style -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
 
 
 </head>
@@ -48,7 +46,7 @@
               <!-- January 28, 2020 -->
               <span id="date-pick"></span>
             </div>
-
+            
             <div class="social-share-button">
               <ul>
                 <li id="normal-text"> <b>119k</b> Shares</li>
@@ -56,14 +54,14 @@
                 <li id="twitter"> <img alt="twitter sharing button" src="assets/img/twitter.svg"> <span class="st-label">15.6k</span></li>
                 <li id="pinterest"> <img alt="pinterest sharing button" src="assets/img/pinterest.svg">  <span class="st-label">838</span></li>
                 <li id="messenger"> <img alt="messenger sharing button" src="assets/img/messenger.svg"> <span class="st-label">494</span></li>
-                <li id="email"><img alt="email sharing button" src="assets/img/email.svg"> <span class="st-label">3.4k</span></li>
+                <li id="email"><a href="mailto:"><img alt="email sharing button" src="assets/img/email.svg"> <span class="st-label">3.4k</span></a></li>
               </ul>
             </div>
 
 
             <p><img
-                src="https://cdn.jsdelivr.net/gh/kailu/thankyou@main/cool-gadgets/static/home/gadgets/xmas-front.jpg"
-                alt="" width="100%">
+                src="assets/img/xmas-front.jpg"
+                alt="xmas-front" width="100%">
             </p>
             <div class="pb-4 ">
               <h3>Get deep discounts TODAY on these great Christmas gifts</h3>
@@ -568,6 +566,7 @@
   <!-- All JavaScript -->
   <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
   <script src="assets/js/scroll.js"></script>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5eeaa0e6dcc08b0012d8d2b5&product=inline-share-buttons" async="async"></script>
   <!-- <script src="https://gadgetslaboratory.com/tools/recent/index.js"></script> -->
   <script>
     function printMonth() {
@@ -627,7 +626,7 @@
   
   sharebutton('https://www.facebook.com/sharer/sharer.php?u=',fbButton)
   sharebutton('https://twitter.com/share?',twitter)
-  sharebutton('https://twitter.com/share?',pinterest)
+  sharebutton('https://pinterest.com/pin/create/button/?',pinterest)
   sharebutton('https://www.facebook.com/sharer/sharer.php?u=',messenger)
 
 

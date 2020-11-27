@@ -1,9 +1,4 @@
 
-/*font-family: 'Lato', sans-serif;
-font-family: 'Roboto', sans-serif;*/
-
-/************** Default CSS **************/
-
 
 body {
   font-family: 'Lato',Helvetica,sans-serif;
@@ -19,8 +14,6 @@ a,
 .button,
 button {
   -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -114,10 +107,12 @@ a {
   text-align: center;
   font-size: 25px;
   padding: 10px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
   transition: all .2s linear;
 }
 
-.cta a:hover {border-right: none;border: 1px solid #2d9cdb;-moz-box-shadow: inset 0 0 20px #fff;-webkit-box-shadow: inset 0 0 20px #fff;box-shadow: inset 0 0 20px #fff;}
+.cta a:hover {border-right: none;border: 1px solid #2d9cdb;-webkit-box-shadow: inset 0 0 20px #fff;box-shadow: inset 0 0 20px #fff;}
 h2.off_header a {
   font-size: 24px;
   color: #2d9cdb;
@@ -152,8 +147,12 @@ header {
 }
 
 .header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-info img {
@@ -193,19 +192,30 @@ div#todays_date span:first-child {
   width: 100%;
   margin-right: 6px;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
   padding: 5px 0px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size:12px;
   cursor: pointer !important;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
 .social-share-button ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 .social-share-button ul li span {
@@ -287,7 +297,37 @@ footer.footer p {
 .copyright-text{
   font-size: 14px !important;
 }
+li#email a:hover {
+  color: #fff;
+}
 /************** Template CSS **************/
+/* Extra small devices (portrait phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  h1 {
+      font-size: 38px;
+  }
+  .cta a {
+      font-size: 20px;
+      padding: 8px;
+  } 
+  .social-share-button ul li span {
+      padding-left: 5px;
+      font-size: 12px;
+  }
+  .social-share-button ul li {
+      padding: 5px 4px;
+  }
+}
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 575.98px) { 
+  h2 {
+      font-size: 20px;
+      font-weight: 700;
+  }
+  span.st-label {
+      display: none;
+  }
+}
 
 /************** Template CSS End **************/
